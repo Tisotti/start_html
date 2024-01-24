@@ -7,6 +7,39 @@
     margin: 0 auto;
 }
 
+.arrow {
+    cursor: pointer;
+    transform: rotate(180deg);
+
+    width: 50px;
+
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+.box {
+    position: relative;
+
+    border: 2px solid tomato;
+    background-color: ccc;
+
+    height: 500px;
+    margin: 20px 0;
+
+    z-index: 3;
+}
+
+.text {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    padding: 20px;
+    background: #000;
+    color: aqua;
+    width: 400px;
+}
 .titel {
     text-align: center;
 }
@@ -14,24 +47,31 @@
 .titel-1 {
     font-size: 50px;
     margin: 25px 0 50px;
+
+    position: sticky;
+    top: 0;
+    padding: 20px 0;
+    background-color: aqua;
+    z-index: 1;
 }
 
-.titel-1:hover {
-    color: blue;
-}
+.titel-1::before, .titel-1::after {
+    position: absolute;
+    left: 0;
+    content: ' ';
 
-.titel-1::before {
-    content: 'Y';
     width: 50px;
     height: 50px;
+
     background-color: blue;
+
+    border-radius: 50px;    
 }
 
 .titel-1::after {
-    content: 'Y';
-    width: 50px;
-    eight: 50px;
-    background-color: blue;
+    right: 0;
+    left: auto;
+    
 }
 
 .titel-2 {
