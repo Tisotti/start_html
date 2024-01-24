@@ -11,6 +11,29 @@
     text-align: center;
 }
 
+.titel-1 {
+    font-size: 50px;
+    margin: 25px 0 50px;
+}
+
+.titel-1:hover {
+    color: blue;
+}
+
+.titel-1::before {
+    content: 'Y';
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
+
+.titel-1::after {
+    content: 'Y';
+    width: 50px;
+    eight: 50px;
+    background-color: blue;
+}
+
 .titel-2 {
     margin-top: 100px;
 }
@@ -18,17 +41,13 @@
 .text-1 {
     font-size: 20px;
     background-color: #ccc;
-    
-    width: 500px;
-    height: 500px;
-    
-    padding: 50px;
-
-    border: 20px solid tomato ;
-
-    overflow-y: auto;
-    /* overflow: hidden; */
 }   
+
+/* .text-1:hover {
+    background-color: #000;
+    color: aliceblue;
+    padding-bottom: 50px;
+} */
 
 .text-2 {
     font-size: 18px;
