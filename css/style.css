@@ -7,6 +7,15 @@
     margin: 0 auto;
 }
 
+.images-1 {
+    transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+    border: 1px solid red;
+}
+
+.images-1:hover {
+    transform: translate(0, -100px);
+}  
+
 .arrow {
     cursor: pointer;
     transform: rotate(180deg);
